@@ -72,3 +72,6 @@ web/
 # - assets/ (logo, images publiques)
 # - .gitignore
 # - pubspec.yaml (optionnel, contient la liste des dépendances)
+
+# VS Code workspace files
+*.code-workspace
