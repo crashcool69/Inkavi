@@ -96,7 +96,56 @@
 
 ## 📸 Screenshots
 
-> *Captures d'écran à venir...*
+<div align="center">
+
+### Configuration & Navigation
+
+<img src="screenshots/01-server-config.png" width="250" alt="Configuration serveur" />
+<img src="screenshots/compte connexion.png" width="250" alt="Connexion compte" />
+<img src="screenshots/02-home.png" width="250" alt="Écran d'accueil" />
+
+*Configuration serveur • Connexion • Accueil*
+
+---
+
+### Bibliothèque & Collections
+
+<img src="screenshots/03-library.png" width="250" alt="Bibliothèque" />
+<img src="screenshots/bibliotheque.png" width="250" alt="Vue bibliothèque" />
+<img src="screenshots/collection.png" width="250" alt="Collections" />
+
+*Bibliothèque principale • Détails • Collections*
+
+---
+
+### Lecteur & Volumes
+
+<img src="screenshots/accueil.png" width="250" alt="Accueil série" />
+<img src="screenshots/volume.png" width="250" alt="Volumes" />
+<img src="screenshots/Lecture.png" width="250" alt="Lecteur" />
+
+*Page série • Liste volumes • Lecteur*
+
+---
+
+### Options & Paramètres
+
+<img src="screenshots/option lecteur.png" width="250" alt="Options lecteur" />
+<img src="screenshots/option.png" width="250" alt="Options" />
+<img src="screenshots/parametres.png" width="250" alt="Paramètres" />
+
+*Options de lecture • Configuration • Paramètres*
+
+---
+
+### Statistiques & Notes
+
+<img src="screenshots/stats.png" width="250" alt="Statistiques" />
+<img src="screenshots/note.png" width="250" alt="Notes" />
+
+*Statistiques de lecture • Système de notes*
+
+</div>
 
 ---
 
