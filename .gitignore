@@ -1,0 +1,74 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ======================================
+# PROTECTION DU CODE SOURCE
+# Ne pas pousser le code sur GitHub
+# ======================================
+
+# Exclure TOUT le code source Dart/Flutter
+lib/
+test/
+
+# Exclure les fichiers de configuration sensibles
+pubspec.lock
+android/
+ios/
+linux/
+macos/
+windows/
+web/
+
+# Exclure les dépendances et caches
+.flutter-plugins
+.packages
+.metadata
+
+# Garder UNIQUEMENT (non-ignorés) :
+# - README.md
+# - assets/ (logo, images publiques)
+# - .gitignore
+# - pubspec.yaml (optionnel, contient la liste des dépendances)
