@@ -1,6 +1,8 @@
 <div align="center">
 
-# 📚 Inkavi
+<img src="assets/logo.png" alt="Inkavi Logo" width="200"/>
+
+# Inkavi
 
 ### *Votre bibliothèque Kavita, toujours avec vous*
 
