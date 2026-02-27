@@ -29,6 +29,57 @@
 
 ---
 
+## 🔧 Configuration & Connexion
+
+**Inkavi** se connecte à votre serveur Kavita auto-hébergé. Voici comment le configurer :
+
+### Prérequis
+- Un serveur **Kavita** installé et accessible (version 0.7+)
+- Une **clé API** générée depuis votre interface Kavita
+
+### Obtenir votre clé API Kavita
+
+1. Connectez-vous à votre serveur Kavita (navigateur web)
+2. Allez dans **Paramètres** → **Général** → **3rd Party Clients**
+3. Cliquez sur **Generate API Key** (ou utilisez une clé existante)
+4. **Copiez la clé** (format : `adc40f62-656f-4000-b108-bce4e1d9aa93`)
+
+### Configuration dans Inkavi
+
+Au premier lancement de l'application :
+
+1. **URL du serveur** : Entrez l'URL complète de votre serveur Kavita
+   - Exemple : `https://kavita.votredomaine.com` ou `http://192.168.1.10:5000`
+   - ⚠️ **Important** : L'URL doit être accessible depuis votre appareil mobile
+
+2. **Clé API** : Collez la clé API générée précédemment
+   - Format : `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+
+3. **Tester la connexion** : L'application vérifie automatiquement la connexion
+
+4. **Connexion au compte** : 
+   - Entrez vos identifiants Kavita (nom d'utilisateur + mot de passe)
+   - L'application récupère un **JWT token** pour sécuriser les échanges
+
+### Fonctionnement de l'authentification
+
+**Inkavi** utilise un système d'authentification en deux étapes :
+
+1. **API Key** : Authentifie l'application auprès du serveur Kavita
+2. **JWT Token** : Authentifie l'utilisateur et sécurise chaque requête API
+   - Token stocké de manière sécurisée (Keychain iOS / Keystore Android)
+   - Renouvelé automatiquement à chaque connexion
+   - Expire après 10 jours d'inactivité
+
+### Sécurité
+
+- 🔒 **Connexion chiffrée** : Utilisez HTTPS pour sécuriser vos échanges
+- 🔑 **Stockage sécurisé** : Les identifiants sont protégés par le système
+- 🔐 **Code PIN** : Protection optionnelle de l'accès à l'application
+- 🚫 **Pas de tracking** : Aucune donnée n'est envoyée à des tiers
+
+---
+
 ## 🚀 Fonctionnalités principales
 
 ### 📖 Lecteur avancé
