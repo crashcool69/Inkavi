@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.png" alt="Inkavi Logo" width="200" style="border-radius: 50%;" />
+<img src="assets/logorond.png" alt="Inkavi Logo" width="200" />
 
 # Inkavi
 
