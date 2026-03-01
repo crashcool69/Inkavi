@@ -236,7 +236,7 @@
 - ✅ Performance sur les grandes bibliothèques (pagination par 50 séries)
 - ✅ Mise en cache des images améliorée (limite 500 MB, nettoyage LRU)
 - ✅ Gestion erreurs réseau robuste (retry automatique x3 avec backoff)
-- ✅ **SystemUI edge-to-edge** (barres système transparentes et intégrées)
+- ✅ **Mode immersif complet** (barres système cachées automatiquement)
 - ✅ **Contraste SnackBar amélioré** (notifications visibles en mode clair et sombre)
 - ✅ **Affichage dynamique de la version** (lecture automatique depuis pubspec.yaml)
 
