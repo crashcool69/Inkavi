@@ -1,0 +1,214 @@
+# 🗺️ Roadmap Inkavi
+
+## 📊 Endpoints Kavita API actuellement utilisés
+
+### 🔐 Authentification
+- ✅ `POST /api/Plugin/authenticate` - Obtenir JWT token
+- ✅ `GET /api/Plugin/authkey-expires` - Valider connexion
+- ✅ `POST /api/Account/login` - Login utilisateur
+
+### 📚 Bibliothèques & Séries
+- ✅ `GET /api/Library/libraries` - Liste bibliothèques
+- ✅ `POST /api/series/v2` - Liste séries (avec filtres)
+- ✅ `GET /api/Series/{id}` - Détails série
+- ✅ `GET /api/Series/volumes?seriesId={id}` - Volumes/chapitres
+
+### 📖 Lecture
+- ✅ `GET /api/Reader/image?chapterId={id}&page={page}` - Images pages
+- ✅ `POST /api/Reader/progress` - Sauvegarder progression
+- ✅ `POST /api/Reader/mark-unread` - Marquer non lu
+
+### ⭐ Collections & Favoris
+- ✅ `POST /api/want-to-read/add-series/{id}` - Ajouter "À lire"
+- ✅ `DELETE /api/want-to-read/{id}` - Retirer "À lire"
+- ✅ `GET /api/want-to-read` - Liste "À lire"
+- ✅ `POST /api/Series/{id}/rating` - Noter série
+
+### 📊 Statistiques
+- ✅ `GET /api/Stats/user` - Stats utilisateur
+
+### 🖼️ Images
+- ✅ `/api/image/series-cover?seriesId={id}` - Cover série
+- ✅ `/api/image/chapter-cover?chapterId={id}` - Cover chapitre
+
+---
+
+## 🚀 Évolutions à venir
+
+### 1. 📋 Collections personnalisées
+**API** : `/api/Collection/*`
+
+**Fonctionnalités** :
+- Créer/éditer/supprimer des collections personnalisées
+- Ajouter/retirer des séries d'une collection
+- Afficher les collections sur la page d'accueil
+- Icônes et couleurs personnalisables
+
+**Priorité** : Moyenne
+
+---
+
+### 2. 🔍 Recherche avancée
+**API** : `/api/Search/*`
+
+**Fonctionnalités** :
+- Recherche globale (séries, auteurs, genres, tags)
+- Filtres avancés (type, statut, année, langue)
+- Suggestions de recherche en temps réel
+- Historique de recherche
+
+**Priorité** : Haute
+
+---
+
+### 3. 👤 Gestion du profil
+**API** : `/api/Users/*`, `/api/Account/*`
+
+**Fonctionnalités** :
+- Modifier les préférences utilisateur
+- Changer le mot de passe
+- Gérer l'avatar
+- Paramètres de confidentialité
+
+**Priorité** : Basse
+
+---
+
+### 4. 📚 Listes de lecture
+**API** : `/api/ReadingList/*`
+
+**Fonctionnalités** :
+- Créer des listes de lecture personnalisées
+- Partager des listes avec d'autres utilisateurs
+- Suivre la progression d'une liste
+- Réorganiser l'ordre des séries
+
+**Priorité** : Haute
+
+---
+
+### 5. 🏷️ Tags & Métadonnées enrichies
+**API** : `/api/Metadata/*`, `/api/Series/metadata`
+
+**Fonctionnalités** :
+- Afficher les genres, auteurs, tags détaillés
+- Filtrer par métadonnées
+- Éditer les métadonnées (admin)
+- Vue par genre/auteur
+
+**Priorité** : Moyenne
+
+---
+
+### 6. 📊 Statistiques avancées
+**API** : `/api/Stats/*`
+
+**Fonctionnalités** :
+- Graphiques de lecture par jour/mois/année
+- Top séries les plus lues
+- Temps de lecture par genre
+- Objectifs de lecture
+- Streaks (jours consécutifs de lecture)
+
+**Priorité** : Moyenne
+
+---
+
+### 7. 🔔 Notifications & Annonces
+**API** : `/api/Server/announcements`
+
+**Fonctionnalités** :
+- Notifications de nouvelles séries ajoutées
+- Alertes de nouveaux chapitres pour les séries favorites
+- Annonces du serveur
+- Notifications push (optionnel)
+
+**Priorité** : Basse
+
+---
+
+### 8. 📥 Téléchargement hors ligne
+**API** : `/api/Download/*`
+
+**Fonctionnalités** :
+- Télécharger des chapitres pour lecture hors ligne
+- Gestion du stockage (limite, suppression auto)
+- Synchronisation automatique
+- Indicateur de chapitres téléchargés
+
+**Priorité** : Haute
+
+---
+
+### 9. 🌐 Multi-serveurs
+**API** : Gestion locale
+
+**Fonctionnalités** :
+- Gérer plusieurs serveurs Kavita
+- Basculer facilement entre serveurs
+- Synchronisation multi-serveurs
+- Comptes séparés par serveur
+
+**Priorité** : Basse
+
+---
+
+### 10. 🎨 Thèmes personnalisables
+**API** : Gestion locale
+
+**Fonctionnalités** :
+- Thèmes clair/sombre/auto
+- Couleurs d'accentuation personnalisables
+- Fonds d'écran personnalisés
+- Mode AMOLED (noir pur)
+
+**Priorité** : Moyenne
+
+---
+
+## 🐛 Bugs connus & Améliorations
+
+### Corrections en cours
+- ✅ Zoom lecteur fonctionnel (PhotoViewGallery)
+- ✅ Noms de bibliothèques affichés en entier (scroll horizontal)
+- ✅ Retour du mode plein écran (tap pour sortir)
+
+### À corriger
+- [ ] Performance sur les grandes bibliothèques (>1000 séries)
+- [ ] Mise en cache des images améliorée
+- [ ] Gestion erreurs réseau plus robuste
+
+---
+
+## 📅 Planning prévisionnel
+
+**Q1 2025** (Janvier - Mars)
+- Recherche avancée
+- Listes de lecture
+- Téléchargement hors ligne
+
+**Q2 2025** (Avril - Juin)
+- Collections personnalisées
+- Tags & Métadonnées enrichies
+- Statistiques avancées
+
+**Q3 2025** (Juillet - Septembre)
+- Thèmes personnalisables
+- Notifications
+- Optimisations performances
+
+**Q4 2025** (Octobre - Décembre)
+- Multi-serveurs
+- Gestion profil avancée
+- Fonctionnalités communautaires
+
+---
+
+## 🤝 Contributions
+
+Les suggestions et contributions sont les bienvenues ! Ouvrez une issue sur GitHub pour proposer de nouvelles fonctionnalités ou signaler des bugs.
+
+**Ressources** :
+- [Kavita API Documentation](https://www.kavitareader.com/docs/api/)
+- [Kavita OpenAPI Spec](https://raw.githubusercontent.com/Kareadita/Kavita/develop/openapi.json)
+- [Kavita Wiki](https://wiki.kavitareader.com/)
