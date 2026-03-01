@@ -33,6 +33,8 @@
 - ✅ Marquer comme lu/non lu (chapitre & série)
 - ✅ Statistiques utilisateur (pages lues, temps de lecture)
 - ✅ Historique de lecture
+- ✅ **Pagination intelligente** (chargement par lots de 50)
+- ✅ **Scroll infini** avec chargement automatique
 
 ### ⭐ Collections & Favoris
 - ✅ Liste "À lire plus tard" (Want to Read)
@@ -43,6 +45,9 @@
 - ✅ Design Material Design 3
 - ✅ Mode clair/sombre adaptatif
 - ✅ Navigation fluide entre écrans
+- ✅ **Hero animations** sur les covers de séries
+- ✅ **Animations stagger** (apparition progressive des listes)
+- ✅ Animations de scale sur les interactions
 - ✅ Préchargement des images
 - ✅ Cache des images pour performances
 - ✅ Gestion des erreurs réseau
