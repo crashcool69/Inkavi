@@ -227,10 +227,10 @@
 - ✅ Noms de bibliothèques affichés en entier (scroll horizontal)
 - ✅ Retour du mode plein écran (tap pour sortir)
 
-### À corriger
-- [ ] Performance sur les grandes bibliothèques (>1000 séries)
-- [ ] Mise en cache des images améliorée
-- [ ] Gestion erreurs réseau plus robuste
+### ✅ Optimisations récemment complétées
+- ✅ Performance sur les grandes bibliothèques (pagination par 50 séries)
+- ✅ Mise en cache des images améliorée (limite 500 MB, nettoyage LRU)
+- ✅ Gestion erreurs réseau robuste (retry automatique x3 avec backoff)
 
 ---
 
