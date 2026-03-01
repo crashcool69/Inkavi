@@ -75,3 +75,4 @@ web/
 
 # VS Code workspace files
 *.code-workspace
+upload-keystore.jks
