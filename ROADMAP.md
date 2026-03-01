@@ -1,5 +1,59 @@
 # 🗺️ Roadmap Inkavi
 
+## ✅ Fonctionnalités actuellement en place
+
+### 🔐 Authentification & Connexion
+- ✅ Login via API Key
+- ✅ Login via compte utilisateur (email/mot de passe)
+- ✅ JWT Token automatique
+- ✅ Stockage sécurisé des credentials (Keychain/Keystore)
+- ✅ Validation de connexion serveur
+
+### 📚 Gestion des bibliothèques
+- ✅ Affichage de toutes les bibliothèques
+- ✅ Scroll horizontal des bibliothèques (carrousel)
+- ✅ Icônes par type (Manga, Comic, Book)
+- ✅ Filtrage par bibliothèque
+
+### 📖 Lecture de séries
+- ✅ Liste des séries par bibliothèque
+- ✅ Détails d'une série (cover, description, métadonnées)
+- ✅ Affichage des volumes et chapitres
+- ✅ Lecteur d'images page par page
+- ✅ **Zoom sur les pages** (pinch & double-tap)
+- ✅ Mode plein écran avec tap pour sortir
+- ✅ Navigation par tap (gauche/centre/droite)
+- ✅ Modes de lecture : LTR, RTL, Vertical
+- ✅ Filtres de couleur (Sepia, Night mode)
+- ✅ Réglage luminosité
+
+### 📊 Progression & Statistiques
+- ✅ Sauvegarde automatique de la progression
+- ✅ "Continuer la lecture" sur la page d'accueil
+- ✅ Marquer comme lu/non lu (chapitre & série)
+- ✅ Statistiques utilisateur (pages lues, temps de lecture)
+- ✅ Historique de lecture
+
+### ⭐ Collections & Favoris
+- ✅ Liste "À lire plus tard" (Want to Read)
+- ✅ Notation des séries (1-5 étoiles)
+- ✅ Affichage des séries en cours
+
+### 🎨 Interface & Design
+- ✅ Design Material Design 3
+- ✅ Mode clair/sombre adaptatif
+- ✅ Navigation fluide entre écrans
+- ✅ Préchargement des images
+- ✅ Cache des images pour performances
+- ✅ Gestion des erreurs réseau
+
+### 🌐 Multilingue
+- ✅ Support français
+- ✅ Support anglais
+- ✅ Détection automatique de la langue système
+
+---
+
 ## 📊 Endpoints Kavita API actuellement utilisés
 
 ### 🔐 Authentification
@@ -182,22 +236,22 @@
 
 ## 📅 Planning prévisionnel
 
-**Q1 2025** (Janvier - Mars)
+**Q1 2026** (Janvier - Mars)
 - Recherche avancée
 - Listes de lecture
 - Téléchargement hors ligne
 
-**Q2 2025** (Avril - Juin)
+**Q2 2026** (Avril - Juin)
 - Collections personnalisées
 - Tags & Métadonnées enrichies
 - Statistiques avancées
 
-**Q3 2025** (Juillet - Septembre)
+**Q3 2026** (Juillet - Septembre)
 - Thèmes personnalisables
 - Notifications
 - Optimisations performances
 
-**Q4 2025** (Octobre - Décembre)
+**Q4 2026** (Octobre - Décembre)
 - Multi-serveurs
 - Gestion profil avancée
 - Fonctionnalités communautaires
