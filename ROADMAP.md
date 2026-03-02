@@ -19,7 +19,10 @@
 - ✅ Liste des séries par bibliothèque
 - ✅ Détails d'une série (cover, description, métadonnées)
 - ✅ Affichage des volumes et chapitres
-- ✅ Lecteur d'images page par page
+- ✅ Lecteur d'images page par page (CBZ/CBR/PDF/Images)
+- ✅ **Lecteur EPUB natif** — streaming direct depuis le serveur Kavita via WebView (`EpubReaderScreen`)
+- ✅ **Routage automatique format** — détection format 3 = EPUB → `EpubReaderScreen`, sinon → `ReaderScreen`
+- ✅ **URL EPUB dynamique** — construction `library-agnostic` (JWT, seriesId, volumeId, chapterId, startPage)
 - ✅ **Zoom sur les pages** (pinch & double-tap)
 - ✅ Mode plein écran avec tap pour sortir
 - ✅ Navigation par tap (gauche/centre/droite)
