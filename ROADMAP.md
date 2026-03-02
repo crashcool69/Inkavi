@@ -239,6 +239,13 @@
 - ✅ **Mode immersif complet** (barres système cachées automatiquement)
 - ✅ **Contraste SnackBar amélioré** (notifications visibles en mode clair et sombre)
 - ✅ **Affichage dynamique de la version** (lecture automatique depuis pubspec.yaml)
+- ✅ **Thème clair Inkavi** — fond blanc pur, couleurs d'accent rose/violet/cyan issues du logo
+- ✅ **Tuiles séries redesignées** — gradient arc-en-ciel doux, ombres colorées, coins arrondis uniformes
+- ✅ **Hero tags uniques** — correctif crash duplication d'animations Hero (`heroSuffix` par contexte)
+- ✅ **Fiche série — boutons Favoris & À lire** — glassmorphism avec gloss et dégradé actif/inactif
+- ✅ **Fiche série — tuile Progression** — carte blanche avec ligne d'accent gradient 3 px
+- ✅ **Fiche série — tuile Temps de lecture** — même style que Progression avec palette cyan/bleu
+- ✅ **Refactoring series_detail_screen** — fichier 2 456 lignes découpé en 5 sous-widgets modulaires (`SeriesProgressTile`, `SeriesReadingTimeTile`, `SeriesActionButtons`, `SeriesSynopsis`, `SeriesVolumesSection`)
 
 ---
 
