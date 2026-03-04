@@ -42,7 +42,7 @@
 1. Connectez-vous à votre serveur Kavita (navigateur web)
 2. Allez dans **Paramètres** → **Compte** → **Clé d'authentification / OPDS**
 3. Cliquez sur **Generate API Key** (ou utilisez une clé existante)
-4. **Copiez la clé** (format : `adc40f62-656f-4000-b108-bce4e1d9aa93`)
+4. **Copiez la clé** (format : `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`)
 
 ### Configuration dans Inkavi
 
@@ -53,7 +53,7 @@ Au premier lancement de l'application :
    - ⚠️ **Important** : L'URL doit être accessible depuis votre appareil mobile
 
 2. **Clé API** : Collez la clé API générée précédemment
-   - Format : `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+   - Format : `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
 
 3. **Tester la connexion** : L'application vérifie automatiquement la connexion
 
