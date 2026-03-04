@@ -124,7 +124,7 @@ Au premier lancement de l'application :
 **Framework & Langage**
 - Flutter 3.11+ (UI cross-platform)
 - Dart (Langage)
-- Développé avec [Qoder](https://qoder.dev) (IDE agentique Flutter)
+- Développé avec [<img src="assets/logo.png" width="16" alt="Qoder" /> Qoder](https://qoder.com) (IDE agentique Flutter)
 
 **Architecture & State Management**
 - Architecture MVVM (Model-View-ViewModel)
