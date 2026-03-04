@@ -40,7 +40,7 @@
 ### Obtenir votre clé API Kavita
 
 1. Connectez-vous à votre serveur Kavita (navigateur web)
-2. Allez dans **Paramètres** → **Général** → **3rd Party Clients**
+2. Allez dans **Paramètres** → **Compte** → **Clé d'authentification / OPDS**
 3. Cliquez sur **Generate API Key** (ou utilisez une clé existante)
 4. **Copiez la clé** (format : `adc40f62-656f-4000-b108-bce4e1d9aa93`)
 
@@ -124,6 +124,7 @@ Au premier lancement de l'application :
 **Framework & Langage**
 - Flutter 3.11+ (UI cross-platform)
 - Dart (Langage)
+- Développé avec [Qoder](https://qoder.dev) (IDE agentique Flutter)
 
 **Architecture & State Management**
 - Architecture MVVM (Model-View-ViewModel)
