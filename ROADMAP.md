@@ -3,8 +3,12 @@
 ## ✅ Fonctionnalités actuellement en place
 
 ### 🔐 Authentification & Connexion
+- ✅ **Configuration OPDS simplifiée** — URL OPDS unique extrait automatiquement serveur + API Key
+- ✅ **Liste des serveurs enregistrés** — tuiles interactives avec badge "Par défaut" animé
+- ✅ **Modal d'aide intégré** — guide étape par étape pour obtenir l'URL OPDS depuis Kavita
+- ✅ **Thème sombre par défaut** — démarrage en dark mode, toggle utilisateur disponible
 - ✅ Login via API Key
-- ✅ Login via compte utilisateur (email/mot de passe)
+- ✅ Login via compte utilisateur (identifiant/mot de passe)
 - ✅ JWT Token automatique
 - ✅ Stockage sécurisé des credentials (Keychain/Keystore)
 - ✅ Validation de connexion serveur
@@ -231,6 +235,7 @@
 ## 🐛 Bugs connus & Améliorations
 
 ### Corrections en cours
+- 🐛 **Lecteur EPUB** — problèmes de lecture des fichiers EPUB (format 3), investigations en cours
 - ✅ Zoom lecteur fonctionnel (PhotoViewGallery)
 - ✅ Noms de bibliothèques affichés en entier (scroll horizontal)
 - ✅ Retour du mode plein écran (tap pour sortir)
