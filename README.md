@@ -35,31 +35,36 @@
 
 ### Prérequis
 - Un serveur **Kavita** installé et accessible (version 0.7+)
-- Une **clé API** générée depuis votre interface Kavita
+- Votre **URL OPDS** depuis l'interface Kavita
 
-### Obtenir votre clé API Kavita
+### Obtenir votre URL OPDS Kavita
 
 1. Connectez-vous à votre serveur Kavita (navigateur web)
 2. Allez dans **Paramètres** → **Compte** → **Clé d'authentification / OPDS**
 3. Cliquez sur **Generate API Key** (ou utilisez une clé existante)
-4. **Copiez la clé** (format : `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`)
+4. **Copiez l'URL OPDS** (format : `https://votreserveur.com/api/opds/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
 
 ### Configuration dans Inkavi
 
 Au premier lancement de l'application :
 
-1. **URL du serveur** : Entrez l'URL complète de votre serveur Kavita
-   - Exemple : `https://kavita.votredomaine.com` ou `http://192.168.1.10:5000`
-   - ⚠️ **Important** : L'URL doit être accessible depuis votre appareil mobile
+1. **Ajoutez votre serveur** :
+   - Cliquez sur **"Ajouter un serveur"**
+   - Collez votre **URL OPDS** complète
+   - Exemple : `https://kavita.votredomaine.com/api/opds/adc40f62-656f-4000-b108-bce4e1d9aa93`
+   - L'application extraira automatiquement l'URL du serveur et la clé API
 
-2. **Clé API** : Collez la clé API générée précédemment
-   - Format : `xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+2. **Sélectionnez votre serveur** :
+   - Cliquez sur la tuile du serveur enregistré
+   - Le badge "Par défaut" indique le serveur actif
 
-3. **Tester la connexion** : L'application vérifie automatiquement la connexion
-
-4. **Connexion au compte** : 
-   - Entrez vos identifiants Kavita (nom d'utilisateur + mot de passe)
+3. **Connectez-vous** :
+   - Entrez votre **identifiant** et **mot de passe** Kavita
    - L'application récupère un **JWT token** pour sécuriser les échanges
+
+4. **Prochaines connexions** :
+   - Votre serveur reste enregistré
+   - Cliquez simplement sur la tuile pour vous reconnecter
 
 ### Fonctionnement de l'authentification
 
