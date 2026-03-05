@@ -6,6 +6,7 @@
 - ✅ **Configuration OPDS simplifiée** — URL OPDS unique extrait automatiquement serveur + API Key
 - ✅ **Liste des serveurs enregistrés** — tuiles interactives avec badge "Par défaut" animé
 - ✅ **Modal d'aide intégré** — guide étape par étape pour obtenir l'URL OPDS depuis Kavita
+- ✅ **Validation en ligne** — indicateur visuel "En ligne" / "Hors ligne" avec animation pulse
 - ✅ **Thème sombre par défaut** — démarrage en dark mode, toggle utilisateur disponible
 - ✅ Login via API Key
 - ✅ Login via compte utilisateur (identifiant/mot de passe)
@@ -55,6 +56,11 @@
 - ✅ **Hero animations** sur les covers de séries
 - ✅ **Animations stagger** (apparition progressive des listes)
 - ✅ Animations de scale sur les interactions
+- ✅ **Badge "NOUVEAU" animé** — pulse et glow sur les séries récemment ajoutées
+- ✅ **Barre de progression dégradée** — gradient rose/violet/bleu sur les covers
+- ✅ **Tuiles bibliothèque améliorées** — bordure visible et fond dégradé sur les icônes
+- ✅ **Boîte de dialogue déconnexion stylisée** — thème Inkavi avec icône et boutons dégradés
+- ✅ **Pull-to-refresh stylisé** — couleur violette Inkavi
 - ✅ Préchargement des images
 - ✅ Cache des images pour performances
 - ✅ Gestion des erreurs réseau
@@ -254,6 +260,11 @@
 - ✅ **Fiche série — tuile Progression** — carte blanche avec ligne d'accent gradient 3 px
 - ✅ **Fiche série — tuile Temps de lecture** — même style que Progression avec palette cyan/bleu
 - ✅ **Refactoring series_detail_screen** — fichier 2 456 lignes découpé en 5 sous-widgets modulaires (`SeriesProgressTile`, `SeriesReadingTimeTile`, `SeriesActionButtons`, `SeriesSynopsis`, `SeriesVolumesSection`)
+- ✅ **Configuration OPDS — Validation en ligne** — indicateur visuel avec animation pulse
+- ✅ **Badge "NOUVEAU" animé** — pulse scale et ombre animée sur les séries récentes
+- ✅ **Barre de progression dégradée** — gradient dynamique rose/violet/bleu
+- ✅ **Tuiles bibliothèque** — bordure colorée et fond dégradé sur icônes
+- ✅ **Dialogue déconnexion** — design Inkavi avec dégradés et icône stylisée
 
 ---
 
