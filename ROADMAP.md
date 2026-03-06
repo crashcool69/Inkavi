@@ -269,7 +269,7 @@
 - ✅ **Marquage lu/non lu** — fonctionne correctement avec rafraîchissement en temps réel
 - ✅ **Rafraîchissement progression** — mise à jour automatique quand on revient du lecteur
 - ✅ **Intégration AniList** — récupération métadonnées manga (statut, volumes totaux)
-- ✅ **Tuiles fantômes volumes manquants** — affichage des volumes manquants dans une série
+- ✅ **Tuiles fantômes volumes manquants (AniList)** — affichage des volumes manquants via métadonnées AniList
 
 ---
 
