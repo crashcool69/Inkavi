@@ -268,7 +268,7 @@
 - ✅ **Menu contextuel volume** — redesign glassmorphism avec thème Inkavi (rose/cyan)
 - ✅ **Marquage lu/non lu** — fonctionne correctement avec rafraîchissement en temps réel
 - ✅ **Rafraîchissement progression** — mise à jour automatique quand on revient du lecteur
-- ✅ **Intégration AniList** — récupération métadonnées manga (statut, volumes totaux)
+- ✅ **Intégration AniList (bibliothèques Manga)** — récupération métadonnées manga uniquement pour les bibliothèques de type Manga (statut, volumes totaux)
 - ✅ **Tuiles fantômes volumes manquants (AniList)** — affichage des volumes manquants via métadonnées AniList
 
 ---
