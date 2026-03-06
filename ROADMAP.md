@@ -265,6 +265,11 @@
 - ✅ **Barre de progression dégradée** — gradient dynamique rose/violet/bleu
 - ✅ **Tuiles bibliothèque** — bordure colorée et fond dégradé sur icônes
 - ✅ **Dialogue déconnexion** — design Inkavi avec dégradés et icône stylisée
+- ✅ **Menu contextuel volume** — redesign glassmorphism avec thème Inkavi (rose/cyan)
+- ✅ **Marquage lu/non lu** — fonctionne correctement avec rafraîchissement en temps réel
+- ✅ **Rafraîchissement progression** — mise à jour automatique quand on revient du lecteur
+- ✅ **Intégration AniList** — récupération métadonnées manga (statut, volumes totaux)
+- ✅ **Tuiles fantômes volumes manquants** — affichage des volumes manquants dans une série
 
 ---
 
