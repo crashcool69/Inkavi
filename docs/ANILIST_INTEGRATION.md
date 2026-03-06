@@ -69,6 +69,10 @@ AniList retourne les informations suivantes :
 - Affichage de tuiles "fantômes" pour les volumes manquants
 - Badge "Manquant" sur ces tuiles
 
+![Exemple de tuiles fantômes pour volumes manquants](anilist_ghost_tiles_example.png)
+
+*Exemple : Volume 27 présent dans Kavita, volumes 28-29-30 manquants (affichés en tuiles fantômes)*
+
 ### 5. Conditions d'activation
 
 L'intégration AniList s'active uniquement si :
