@@ -10,8 +10,10 @@ L'application Inkavi intègre l'API AniList pour enrichir les métadonnées des 
 
 Quand un utilisateur ouvre la fiche détail d'une série :
 - L'application vérifie le `libraryType` de la série
-- Si `libraryType == 0` (Manga) → Activation de l'intégration AniList
+- Si `libraryType == 0` (Manga ou Mangas) → Activation de l'intégration AniList
 - Si autre type (Comic, Book, etc.) → Pas d'appel AniList
+
+**Important** : Pour bénéficier de l'intégration AniList, vous devez créer une bibliothèque de type **Manga** ou **Mangas** sur votre serveur Kavita et y ajouter vos séries.
 
 ### 2. Recherche sur AniList
 
