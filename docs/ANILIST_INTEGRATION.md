@@ -49,10 +49,15 @@ AniList retourne les informations suivantes :
 
 ### 4. Affichage des informations
 
-#### Badge de statut
+#### Badge de statut (bibliothèque Manga uniquement)
 - Positionné dans le header de la fiche série
-- "En cours" (dégradé cyan/bleu) si `status == RELEASING`
-- "Terminé" (dégradé rose/violet) si `status == FINISHED`
+- "En cours" (orange) si `status == RELEASING`
+- "Terminé" (vert) si `status == FINISHED`
+- **Info-bulle** : Survolez/appuyez longuement sur le badge pour voir l'info
+
+#### Badge informatif (autres bibliothèques)
+- Si la série n'est pas dans une bibliothèque Manga, un badge gris "AniList" s'affiche
+- **Info-bulle** : "AniList disponible uniquement pour les bibliothèques de type Manga/Mangas"
 
 #### Volumes manquants
 - Comparaison entre volumes existants dans Kavita et `volumes` total AniList
