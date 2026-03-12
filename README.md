@@ -157,54 +157,34 @@ Au premier lancement de l'application :
 
 <div align="center">
 
-### Configuration & Navigation
+### Présentation visuel :
 
 <img src="screenshots/CaptGitIphone_2.png" width="250" alt="Configuration serveur" />
 <img src="screenshots/CaptGitIphone_3.png" width="250" alt="Aide OPDS" />
 <img src="screenshots/CaptGitIphone_4.png" width="250" alt="URL OPDS" />
 <img src="screenshots/CaptGitIphone_1.png" width="250" alt="Connexion compte" />
-<img src="screenshots/CaptGitIphone_5.png" width="250" alt="Écran d'accueil" />
+<img src="screenshots/CaptGitIphone_5.png" width="250" alt="Écran Accueil" />
+<img src="screenshots/CaptGitIphone_6.png" width="250" alt="Écran Accueil" />
+<img src="screenshots/CaptGitIphone_7.png" width="250" alt="Écran Serie" />
+<img src="screenshots/CaptGitIphone_8.png" width="250" alt="Écran Serie" />
+<img src="screenshots/CaptGitIphone_9.png" width="250" alt="Écran Menu Serie" />
+<img src="screenshots/CaptGitIphone_10.png" width="250" alt="Écran News" />
+<img src="screenshots/CaptGitIphone_11.png" width="250" alt="Écran Stats" />
+<img src="screenshots/CaptGitIphone_12.png" width="250" alt="Écran Parametres" />
+<img src="screenshots/CaptGitIphone_13.png" width="250" alt="Écran Recherche" />
 
 *Configuration serveur • Connexion • Accueil*
 
 ---
 
-### Bibliothèque & Collections
+### Tablette
 
-<img src="screenshots/03-library.png" width="250" alt="Bibliothèque" />
-<img src="screenshots/bibliotheque.png" width="250" alt="Vue bibliothèque" />
-<img src="screenshots/collection.png" width="250" alt="Collections" />
+<img src="screenshots/CaptGitTab_1.png" width="250" alt="Écran Accueil" />
+<img src="screenshots/CaptGitTab_4.png" width="250" alt="Écran Accueil" />
+<img src="screenshots/CaptGitTab_2.png" width="250" alt="Écran Serie" />
+<img src="screenshots/CaptGitTab_3.png" width="250" alt="Écran Serie" />
 
-*Bibliothèque principale • Détails • Collections*
-
----
-
-### Lecteur & Volumes
-
-<img src="screenshots/accueil.png" width="250" alt="Accueil série" />
-<img src="screenshots/volume.png" width="250" alt="Volumes" />
-<img src="screenshots/Lecture.png" width="250" alt="Lecteur" />
-
-*Page série • Liste volumes • Lecteur*
-
----
-
-### Options & Paramètres
-
-<img src="screenshots/option lecteur.png" width="250" alt="Options lecteur" />
-<img src="screenshots/option.png" width="250" alt="Options" />
-<img src="screenshots/parametres.png" width="250" alt="Paramètres" />
-
-*Options de lecture • Configuration • Paramètres*
-
----
-
-### Statistiques & Notes
-
-<img src="screenshots/stats.png" width="250" alt="Statistiques" />
-<img src="screenshots/note.png" width="250" alt="Notes" />
-
-*Statistiques de lecture • Système de notes*
+*Accueil • Détails • Collections*
 
 </div>
 
