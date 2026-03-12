@@ -159,9 +159,11 @@ Au premier lancement de l'application :
 
 ### Configuration & Navigation
 
-<img src="screenshots/01-server-config.png" width="250" alt="Configuration serveur" />
-<img src="screenshots/compte connexion.png" width="250" alt="Connexion compte" />
-<img src="screenshots/02-home.png" width="250" alt="Écran d'accueil" />
+<img src="screenshots/CaptGitIphone_2.png" width="250" alt="Configuration serveur" />
+<img src="screenshots/CaptGitIphone_3.png" width="250" alt="Aide OPDS" />
+<img src="screenshots/CaptGitIphone_4.png" width="250" alt="URL OPDS" />
+<img src="screenshots/CaptGitIphone_1.png" width="250" alt="Connexion compte" />
+<img src="screenshots/CaptGitIphone_5.png" width="250" alt="Écran d'accueil" />
 
 *Configuration serveur • Connexion • Accueil*
 
