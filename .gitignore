@@ -76,3 +76,8 @@ web/
 # VS Code workspace files
 *.code-workspace
 upload-keystore.jks
+
+# Dossiers à exclure
+demo/
+js/
+backup/
