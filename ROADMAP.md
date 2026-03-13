@@ -43,6 +43,7 @@
 - ✅ Historique de lecture
 - ✅ **Pagination intelligente** (chargement par lots de 50)
 - ✅ **Scroll infini** avec chargement automatique
+- ✅ **Lecture hors ligne avec synchronisation** — détection automatique serveur offline, sauvegarde locale de la progression, synchronisation avec Kavita au retour online
 
 ### ⭐ Collections & Favoris
 - ✅ Liste "À lire plus tard" (Want to Read)
@@ -61,6 +62,8 @@
 - ✅ **Tuiles bibliothèque améliorées** — bordure visible et fond dégradé sur les icônes
 - ✅ **Boîte de dialogue déconnexion stylisée** — thème Inkavi avec icône et boutons dégradés
 - ✅ **Pull-to-refresh stylisé** — couleur violette Inkavi
+- ✅ **Badge de téléchargement** — indicateur visuel sur les volumes téléchargés (positionné à gauche du cover)
+- ✅ **Progression de téléchargement temps réel** — badge circulaire avec pourcentage pendant le téléchargement
 - ✅ Préchargement des images
 - ✅ Cache des images pour performances
 - ✅ Gestion des erreurs réseau
@@ -89,6 +92,7 @@
 - ✅ `GET /api/Reader/image?chapterId={id}&page={page}` - Images pages
 - ✅ `POST /api/Reader/progress` - Sauvegarder progression
 - ✅ `POST /api/Reader/mark-unread` - Marquer non lu
+- ✅ `GET /api/health` - Vérification statut serveur (pour détection offline)
 
 ### ⭐ Collections & Favoris
 - ✅ `POST /api/want-to-read/add-series/{id}` - Ajouter "À lire"
@@ -199,16 +203,20 @@
 
 ---
 
-### 8. 📥 Téléchargement hors ligne
-**API** : `/api/Download/*`
+### 8. 📥 Téléchargement hors ligne ✅
+**API** : `/api/Download/*` (lecture directe des fichiers locaux)
 
-**Fonctionnalités** :
-- Télécharger des chapitres pour lecture hors ligne
-- Gestion du stockage (limite, suppression auto)
-- Synchronisation automatique
-- Indicateur de chapitres téléchargés
+**Fonctionnalités implémentées** :
+- ✅ Téléchargement de volumes complets avec progression temps réel
+- ✅ Lecture hors ligne native avec images locales (FileImage)
+- ✅ Détection automatique serveur hors ligne avec proposition de lecture offline
+- ✅ Sauvegarde locale de la progression de lecture
+- ✅ Synchronisation automatique avec Kavita au retour online
+- ✅ Gestion du stockage avec suppression manuelle
+- ✅ Indicateur visuel sur les volumes téléchargés (badge à gauche du cover)
+- ✅ Liste des téléchargements avec cover, taille et nombre de pages
 
-**Priorité** : Haute
+**Priorité** : ✅ Complété
 
 ---
 
@@ -270,15 +278,18 @@
 - ✅ **Rafraîchissement progression** — mise à jour automatique quand on revient du lecteur
 - ✅ **Intégration AniList (bibliothèques Manga)** — récupération métadonnées manga uniquement pour les bibliothèques de type Manga (statut, volumes totaux)
 - ✅ **Tuiles fantômes volumes manquants (AniList)** — affichage des volumes manquants via métadonnées AniList
+- ✅ **Téléchargement hors ligne complet** — volumes téléchargeables avec progression temps réel, lecture offline native, synchronisation automatique progression
+- ✅ **Détection serveur offline** — vérification automatique du statut serveur avec proposition de lecture hors ligne
+- ✅ **Badge téléchargement repositionné** — déplacé à gauche du cover pour meilleure visibilité
 
 ---
 
 ## 📅 Planning prévisionnel
 
 **Q1 2026** (Janvier - Mars)
+- ✅ Téléchargement hors ligne — complété avec synchronisation progression
 - Recherche avancée
 - Listes de lecture
-- Téléchargement hors ligne
 
 **Q2 2026** (Avril - Juin)
 - Collections personnalisées
