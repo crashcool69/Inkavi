@@ -44,6 +44,9 @@
 - ✅ **Pagination intelligente** (chargement par lots de 50)
 - ✅ **Scroll infini** avec chargement automatique
 - ✅ **Lecture hors ligne avec synchronisation** — détection automatique serveur offline, sauvegarde locale de la progression, synchronisation avec Kavita au retour online
+- ✅ **Badge "Terminé"** — indicateur visuel sur les volumes complétés en mode hors ligne
+- ✅ **Synchronisation bidirectionnelle** — la progression est sauvegardée localement même en mode en ligne pour garantir la continuité hors ligne
+- ✅ **Modal explicatif mode hors ligne** — guide utilisateur au premier login offline
 
 ### ⭐ Collections & Favoris
 - ✅ Liste "À lire plus tard" (Want to Read)
@@ -106,6 +109,19 @@
 ### 🖼️ Images
 - ✅ `/api/image/series-cover?seriesId={id}` - Cover série
 - ✅ `/api/image/chapter-cover?chapterId={id}` - Cover chapitre
+
+---
+
+## 📝 Historique des versions
+
+### v1.1.3 (Build 3) - Février 2026
+**Améliorations du mode hors ligne**
+- Synchronisation bidirectionnelle de la progression — la progression est toujours sauvegardée localement, même en mode en ligne, pour garantir une expérience fluide lors du passage hors ligne
+- Badge "Terminé" — les volumes complétés en mode hors ligne affichent un indicateur visuel vert avec une coche
+- Synchronisation du statut "lu" — les volumes terminés hors ligne sont automatiquement marqués comme lus sur le serveur Kavita à la reconnexion
+- Modal explicatif — affichage d'un guide utilisateur lors de la première connexion en mode hors ligne expliquant le fonctionnement et les possibilités
+- Rafraîchissement manuel — ajout d'un bouton de rafraîchissement dans la section téléchargements pour mettre à jour les barres de progression
+- Optimisations diverses — suppression du clignotement des barres de progression, désactivation du préchargement réseau en mode hors ligne
 
 ---
 
