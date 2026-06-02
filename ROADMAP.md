@@ -1,0 +1,334 @@
+# 🗺️ Roadmap Inkavi
+
+## ✅ Fonctionnalités actuellement en place
+
+### 🔐 Authentification & Connexion
+- ✅ **Configuration OPDS simplifiée** — URL OPDS unique extrait automatiquement serveur + API Key
+- ✅ **Liste des serveurs enregistrés** — tuiles interactives avec badge "Par défaut" animé
+- ✅ **Modal d'aide intégré** — guide étape par étape pour obtenir l'URL OPDS depuis Kavita
+- ✅ **Validation en ligne** — indicateur visuel "En ligne" / "Hors ligne" avec animation pulse
+- ✅ **Thème sombre par défaut** — démarrage en dark mode, toggle utilisateur disponible
+- ✅ Login via API Key
+- ✅ Login via compte utilisateur (identifiant/mot de passe)
+- ✅ JWT Token automatique
+- ✅ Stockage sécurisé des credentials (Keychain/Keystore)
+- ✅ Validation de connexion serveur
+
+### 📚 Gestion des bibliothèques
+- ✅ Affichage de toutes les bibliothèques
+- ✅ Scroll horizontal des bibliothèques (carrousel)
+- ✅ Icônes par type (Manga, Comic, Book)
+- ✅ Filtrage par bibliothèque
+
+### 📖 Lecture de séries
+- ✅ Liste des séries par bibliothèque
+- ✅ Détails d'une série (cover, description, métadonnées)
+- ✅ Affichage des volumes et chapitres
+- ✅ Lecteur d'images page par page (CBZ/CBR/PDF/Images)
+- ✅ **Lecteur EPUB natif** — streaming direct depuis le serveur Kavita via WebView (`EpubReaderScreen`)
+- ✅ **Routage automatique format** — détection format 3 = EPUB → `EpubReaderScreen`, sinon → `ReaderScreen`
+- ✅ **URL EPUB dynamique** — construction `library-agnostic` (JWT, seriesId, volumeId, chapterId, startPage)
+- ✅ **Zoom sur les pages** (pinch & double-tap)
+- ✅ Mode plein écran avec tap pour sortir
+- ✅ Navigation par tap (gauche/centre/droite)
+- ✅ Modes de lecture : LTR, RTL, Vertical
+- ✅ Filtres de couleur (Sepia, Night mode)
+- ✅ Réglage luminosité
+
+### 📊 Progression & Statistiques
+- ✅ Sauvegarde automatique de la progression
+- ✅ "Continuer la lecture" sur la page d'accueil
+- ✅ Marquer comme lu/non lu (chapitre & série)
+- ✅ Statistiques utilisateur (pages lues, temps de lecture)
+- ✅ Historique de lecture
+- ✅ **Pagination intelligente** (chargement par lots de 50)
+- ✅ **Scroll infini** avec chargement automatique
+- ✅ **Lecture hors ligne avec synchronisation** — détection automatique serveur offline, sauvegarde locale de la progression, synchronisation avec Kavita au retour online
+- ✅ **Badge "Terminé"** — indicateur visuel sur les volumes complétés en mode hors ligne
+- ✅ **Synchronisation bidirectionnelle** — la progression est sauvegardée localement même en mode en ligne pour garantir la continuité hors ligne
+- ✅ **Modal explicatif mode hors ligne** — guide utilisateur au premier login offline
+
+### ⭐ Collections & Favoris
+- ✅ Liste "À lire plus tard" (Want to Read)
+- ✅ Notation des séries (1-5 étoiles)
+- ✅ Affichage des séries en cours
+
+### 🎨 Interface & Design
+- ✅ Design Material Design 3
+- ✅ Mode clair/sombre adaptatif
+- ✅ Navigation fluide entre écrans
+- ✅ **Hero animations** sur les covers de séries
+- ✅ **Animations stagger** (apparition progressive des listes)
+- ✅ Animations de scale sur les interactions
+- ✅ **Badge "NOUVEAU" animé** — pulse et glow sur les séries récemment ajoutées
+- ✅ **Barre de progression dégradée** — gradient rose/violet/bleu sur les covers
+- ✅ **Tuiles bibliothèque améliorées** — bordure visible et fond dégradé sur les icônes
+- ✅ **Boîte de dialogue déconnexion stylisée** — thème Inkavi avec icône et boutons dégradés
+- ✅ **Pull-to-refresh stylisé** — couleur violette Inkavi
+- ✅ **Badge de téléchargement** — indicateur visuel sur les volumes téléchargés (positionné à gauche du cover)
+- ✅ **Progression de téléchargement temps réel** — badge circulaire avec pourcentage pendant le téléchargement
+- ✅ Préchargement des images
+- ✅ Cache des images pour performances
+- ✅ Gestion des erreurs réseau
+
+### 🌐 Multilingue
+- ✅ Support français
+- ✅ Support anglais
+- ✅ Détection automatique de la langue système
+
+---
+
+## 📊 Endpoints Kavita API actuellement utilisés
+
+### 🔐 Authentification
+- ✅ `POST /api/Plugin/authenticate` - Obtenir JWT token
+- ✅ `GET /api/Plugin/authkey-expires` - Valider connexion
+- ✅ `POST /api/Account/login` - Login utilisateur
+
+### 📚 Bibliothèques & Séries
+- ✅ `GET /api/Library/libraries` - Liste bibliothèques
+- ✅ `POST /api/series/v2` - Liste séries (avec filtres)
+- ✅ `GET /api/Series/{id}` - Détails série
+- ✅ `GET /api/Series/volumes?seriesId={id}` - Volumes/chapitres
+
+### 📖 Lecture
+- ✅ `GET /api/Reader/image?chapterId={id}&page={page}` - Images pages
+- ✅ `POST /api/Reader/progress` - Sauvegarder progression
+- ✅ `POST /api/Reader/mark-unread` - Marquer non lu
+- ✅ `GET /api/health` - Vérification statut serveur (pour détection offline)
+
+### ⭐ Collections & Favoris
+- ✅ `POST /api/want-to-read/add-series/{id}` - Ajouter "À lire"
+- ✅ `DELETE /api/want-to-read/{id}` - Retirer "À lire"
+- ✅ `GET /api/want-to-read` - Liste "À lire"
+- ✅ `POST /api/Series/{id}/rating` - Noter série
+
+### 📊 Statistiques
+- ✅ `GET /api/Stats/user` - Stats utilisateur
+
+### 🖼️ Images
+- ✅ `/api/image/series-cover?seriesId={id}` - Cover série
+- ✅ `/api/image/chapter-cover?chapterId={id}` - Cover chapitre
+
+---
+
+## 📝 Historique des versions
+
+### v1.1.3 (Build 3) - Février 2026
+**Améliorations du mode hors ligne**
+- Synchronisation bidirectionnelle de la progression — la progression est toujours sauvegardée localement, même en mode en ligne, pour garantir une expérience fluide lors du passage hors ligne
+- Badge "Terminé" — les volumes complétés en mode hors ligne affichent un indicateur visuel vert avec une coche
+- Synchronisation du statut "lu" — les volumes terminés hors ligne sont automatiquement marqués comme lus sur le serveur Kavita à la reconnexion
+- Modal explicatif — affichage d'un guide utilisateur lors de la première connexion en mode hors ligne expliquant le fonctionnement et les possibilités
+- Rafraîchissement manuel — ajout d'un bouton de rafraîchissement dans la section téléchargements pour mettre à jour les barres de progression
+- Optimisations diverses — suppression du clignotement des barres de progression, désactivation du préchargement réseau en mode hors ligne
+
+---
+
+## 🚀 Évolutions à venir
+
+### 1. 📋 Collections personnalisées
+**API** : `/api/Collection/*`
+
+**Fonctionnalités** :
+- Créer/éditer/supprimer des collections personnalisées
+- Ajouter/retirer des séries d'une collection
+- Afficher les collections sur la page d'accueil
+- Icônes et couleurs personnalisables
+
+**Priorité** : Moyenne
+
+---
+
+### 2. 🔍 Recherche avancée
+**API** : `/api/Search/*`
+
+**Fonctionnalités** :
+- Recherche globale (séries, auteurs, genres, tags)
+- Filtres avancés (type, statut, année, langue)
+- Suggestions de recherche en temps réel
+- Historique de recherche
+
+**Priorité** : Haute
+
+---
+
+### 3. 👤 Gestion du profil
+**API** : `/api/Users/*`, `/api/Account/*`
+
+**Fonctionnalités** :
+- Modifier les préférences utilisateur
+- Changer le mot de passe
+- Gérer l'avatar
+- Paramètres de confidentialité
+
+**Priorité** : Basse
+
+---
+
+### 4. 📚 Listes de lecture
+**API** : `/api/ReadingList/*`
+
+**Fonctionnalités** :
+- Créer des listes de lecture personnalisées
+- Partager des listes avec d'autres utilisateurs
+- Suivre la progression d'une liste
+- Réorganiser l'ordre des séries
+
+**Priorité** : Haute
+
+---
+
+### 5. 🏷️ Tags & Métadonnées enrichies
+**API** : `/api/Metadata/*`, `/api/Series/metadata`
+
+**Fonctionnalités** :
+- Afficher les genres, auteurs, tags détaillés
+- Filtrer par métadonnées
+- Éditer les métadonnées (admin)
+- Vue par genre/auteur
+
+**Priorité** : Moyenne
+
+---
+
+### 6. 📊 Statistiques avancées
+**API** : `/api/Stats/*`
+
+**Fonctionnalités** :
+- Graphiques de lecture par jour/mois/année
+- Top séries les plus lues
+- Temps de lecture par genre
+- Objectifs de lecture
+- Streaks (jours consécutifs de lecture)
+
+**Priorité** : Moyenne
+
+---
+
+### 7. 🔔 Notifications & Annonces
+**API** : `/api/Server/announcements`
+
+**Fonctionnalités** :
+- Notifications de nouvelles séries ajoutées
+- Alertes de nouveaux chapitres pour les séries favorites
+- Annonces du serveur
+- Notifications push (optionnel)
+
+**Priorité** : Basse
+
+---
+
+### 8. 📥 Téléchargement hors ligne ✅
+**API** : `/api/Download/*` (lecture directe des fichiers locaux)
+
+**Fonctionnalités implémentées** :
+- ✅ Téléchargement de volumes complets avec progression temps réel
+- ✅ Lecture hors ligne native avec images locales (FileImage)
+- ✅ Détection automatique serveur hors ligne avec proposition de lecture offline
+- ✅ Sauvegarde locale de la progression de lecture
+- ✅ Synchronisation automatique avec Kavita au retour online
+- ✅ Gestion du stockage avec suppression manuelle
+- ✅ Indicateur visuel sur les volumes téléchargés (badge à gauche du cover)
+- ✅ Liste des téléchargements avec cover, taille et nombre de pages
+
+**Priorité** : ✅ Complété
+
+---
+
+### 9. 🌐 Multi-serveurs
+**API** : Gestion locale
+
+**Fonctionnalités** :
+- Gérer plusieurs serveurs Kavita
+- Basculer facilement entre serveurs
+- Synchronisation multi-serveurs
+- Comptes séparés par serveur
+
+**Priorité** : Basse
+
+---
+
+### 10. 🎨 Thèmes personnalisables
+**API** : Gestion locale
+
+**Fonctionnalités** :
+- Thèmes clair/sombre/auto
+- Couleurs d'accentuation personnalisables
+- Fonds d'écran personnalisés
+- Mode AMOLED (noir pur)
+
+**Priorité** : Moyenne
+
+---
+
+## 🐛 Bugs connus & Améliorations
+
+### Corrections en cours
+- 🐛 **Lecteur EPUB** — problèmes de lecture des fichiers EPUB (format 3), investigations en cours
+- ✅ Zoom lecteur fonctionnel (PhotoViewGallery)
+- ✅ Noms de bibliothèques affichés en entier (scroll horizontal)
+- ✅ Retour du mode plein écran (tap pour sortir)
+
+### ✅ Optimisations récemment complétées
+- ✅ Performance sur les grandes bibliothèques (pagination par 50 séries)
+- ✅ Mise en cache des images améliorée (limite 500 MB, nettoyage LRU)
+- ✅ Gestion erreurs réseau robuste (retry automatique x3 avec backoff)
+- ✅ **Mode immersif complet** (barres système cachées automatiquement)
+- ✅ **Contraste SnackBar amélioré** (notifications visibles en mode clair et sombre)
+- ✅ **Affichage dynamique de la version** (lecture automatique depuis pubspec.yaml)
+- ✅ **Thème clair Inkavi** — fond blanc pur, couleurs d'accent rose/violet/cyan issues du logo
+- ✅ **Tuiles séries redesignées** — gradient arc-en-ciel doux, ombres colorées, coins arrondis uniformes
+- ✅ **Hero tags uniques** — correctif crash duplication d'animations Hero (`heroSuffix` par contexte)
+- ✅ **Fiche série — boutons Favoris & À lire** — glassmorphism avec gloss et dégradé actif/inactif
+- ✅ **Fiche série — tuile Progression** — carte blanche avec ligne d'accent gradient 3 px
+- ✅ **Fiche série — tuile Temps de lecture** — même style que Progression avec palette cyan/bleu
+- ✅ **Refactoring series_detail_screen** — fichier 2 456 lignes découpé en 5 sous-widgets modulaires (`SeriesProgressTile`, `SeriesReadingTimeTile`, `SeriesActionButtons`, `SeriesSynopsis`, `SeriesVolumesSection`)
+- ✅ **Configuration OPDS — Validation en ligne** — indicateur visuel avec animation pulse
+- ✅ **Badge "NOUVEAU" animé** — pulse scale et ombre animée sur les séries récentes
+- ✅ **Barre de progression dégradée** — gradient dynamique rose/violet/bleu
+- ✅ **Tuiles bibliothèque** — bordure colorée et fond dégradé sur icônes
+- ✅ **Dialogue déconnexion** — design Inkavi avec dégradés et icône stylisée
+- ✅ **Menu contextuel volume** — redesign glassmorphism avec thème Inkavi (rose/cyan)
+- ✅ **Marquage lu/non lu** — fonctionne correctement avec rafraîchissement en temps réel
+- ✅ **Rafraîchissement progression** — mise à jour automatique quand on revient du lecteur
+- ✅ **Intégration AniList (bibliothèques Manga)** — récupération métadonnées manga uniquement pour les bibliothèques de type Manga (statut, volumes totaux)
+- ✅ **Tuiles fantômes volumes manquants (AniList)** — affichage des volumes manquants via métadonnées AniList
+- ✅ **Téléchargement hors ligne complet** — volumes téléchargeables avec progression temps réel, lecture offline native, synchronisation automatique progression
+- ✅ **Détection serveur offline** — vérification automatique du statut serveur avec proposition de lecture hors ligne
+- ✅ **Badge téléchargement repositionné** — déplacé à gauche du cover pour meilleure visibilité
+
+---
+
+## 📅 Planning prévisionnel
+
+**Q1 2026** (Janvier - Mars)
+- ✅ Téléchargement hors ligne — complété avec synchronisation progression
+- Recherche avancée
+- Listes de lecture
+
+**Q2 2026** (Avril - Juin)
+- Collections personnalisées
+- Tags & Métadonnées enrichies
+- Statistiques avancées
+
+**Q3 2026** (Juillet - Septembre)
+- Thèmes personnalisables
+- Notifications
+- Optimisations performances
+
+**Q4 2026** (Octobre - Décembre)
+- Multi-serveurs
+- Gestion profil avancée
+- Fonctionnalités communautaires
+
+---
+
+## 🤝 Contributions
+
+Les suggestions et contributions sont les bienvenues ! Ouvrez une issue sur GitHub pour proposer de nouvelles fonctionnalités ou signaler des bugs.
+
+**Ressources** :
+- [Kavita API Documentation](https://www.kavitareader.com/docs/api/)
+- [Kavita OpenAPI Spec](https://raw.githubusercontent.com/Kareadita/Kavita/develop/openapi.json)
+- [Kavita Wiki](https://wiki.kavitareader.com/)
